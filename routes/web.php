@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Actions\WelcomeAction;
+
+Route::get('/', WelcomeAction::class);
